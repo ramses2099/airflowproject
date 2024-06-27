@@ -1,7 +1,8 @@
+from datetime import datetime, timedelta
+
 from airflow.models.dag import DAG
 from airflow.operators.python import PythonOperator
-from datetime import timedelta
-from datetime import datetime
+
 
 defualt_args ={
     'owner':'ramses2099',
