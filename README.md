@@ -48,3 +48,6 @@ docker compose up -d
 - docker compose down -v
 - AIRFLOW__CORE__LOAD_EXAMPLES: 'true' change to false
 - docker compose up airflow-init
+
+### WebUI
+- http://localhost:8080

@@ -21,5 +21,10 @@ with DAG(
         bash_command = 'echo hello world, this is the first task!'
     )
     
-    task1
+    task2 = BashOperator(
+        task_id = 'second_task',
+        bash_command = 'echo hey, I am task2 and will be running after!'
+    )
+    
+    task1.set_downstream(task2)
 
