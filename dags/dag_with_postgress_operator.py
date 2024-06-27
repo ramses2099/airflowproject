@@ -34,6 +34,6 @@ def import_data_dbticketsystem_etl():
             insert into api_departament (name, created, user_id) values ('Training', '2023-07-27', 1);
             """,
         )
-    task1()
+    [task1]
     
 import_data_dbticketsystem_etl()
