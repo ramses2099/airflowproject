@@ -13,3 +13,5 @@ git add .
 git commit -m "This is a commit changes repo $REPONAME date $DATE"
 git push
 echo "Repo [ $REPONAME ] Update Successfully ..."
+sleep 5
+clear

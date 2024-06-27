@@ -11,3 +11,5 @@ echo "Cheking status repo: $REPONAME of user: $USER ..."
 git status
 git pull
 echo "Repo: $REPONAME Update Successfully ..."
+sleep 5
+clear
