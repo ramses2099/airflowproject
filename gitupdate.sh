@@ -5,7 +5,7 @@
 
 USER="ramses2099"
 REPONAME="airflowproject"
-DATE=`date +%d-%m-%y`
+DATE=`date +%Y-%m-%dT%H:%M:%S`
 clear
 echo $DATE
 echo "Cheking status repo [ $REPONAME ] of user [ $USER ] ..."
