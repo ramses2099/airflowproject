@@ -5,12 +5,12 @@
 
 USER="ramses2099"
 REPONAME="airflowproject"
-NOW = $(date '+%Y-%m-%d %H:%M:%S')
+DATE=`date +%d-%m-%y`
 clear
-echo $NOW
+echo $DATE
 echo "Cheking status repo [ $REPONAME ] of user [ $USER ] ..."
 git status
 git add .
-git commit -m "This is a commit changes repo $REPONAME  date  $NOW "
+git commit -m "This is a commit changes repo $REPONAME "
 git push
 echo "Repo [ $REPONAME ] Update Successfully ..."
