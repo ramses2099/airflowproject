@@ -162,4 +162,4 @@ cython_debug/
 #.idea/
 
 # auto update
-.gitupdate.sh
+gitupdate.sh
