@@ -11,6 +11,7 @@ default_args = {
 
 with DAG(
     dag_id ='our_first_dag',
+    default_args = default_args,
     description ='this is our first dag that we write',
     start_date = datetime(2024,6,25,2),
     schedule_interval='@daily'

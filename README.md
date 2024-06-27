@@ -25,7 +25,7 @@ docker compose up airflow-init
 login: airflow
 password: airflow
 
-### runing
+### Running
 docker compose up -d
 
 ### What is Airflow?
@@ -44,7 +44,7 @@ docker compose up -d
 - PythonOperator
 - CustomisedOperator
 
-### clear de DAG example
+### Clear de DAG example
 - docker compose down -v
 - AIRFLOW__CORE__LOAD_EXAMPLES: 'true' change to false
 - docker compose up airflow-init
