@@ -12,7 +12,8 @@ default_args ={
     dag_id='our_dag_with_taskflow_api_v01',
     description = 'Our first dag using taskflow',
     start_date=datetime(2024, 6, 26, 2),
-    schedule_interval = '@daily')
+    schedule_interval = '@daily',
+)
 def hello_world_etl():
     
     @task()
@@ -31,4 +32,4 @@ def hello_world_etl():
     age = get_age()
     greet(name=name, age=age)
     
-greet_dag = hello_world_etl()
+hello_world_etl()
