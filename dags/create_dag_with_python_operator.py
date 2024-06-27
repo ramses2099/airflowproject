@@ -20,7 +20,7 @@ with DAG(
     defualt_args = defualt_args,
     dag_id='our_dag_with_python_operator_v01',
     description = 'Our first dag using python operator',
-    start_date=datetime(2024, 26, 6, 2),
+    start_date=datetime(2024, 6, 26, 2),
     schedule_interval = '@daily'
 )as dg:
     task1 = PythonOperator(
