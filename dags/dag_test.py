@@ -31,7 +31,7 @@ def import_data_dbticketsystem_etl():
             """,
         )
     task2 = PostgresOperator(
-            task_id="create_pet_table",
+            task_id="insert_pet_table",
             postgres_conn_id="postress_connection",
             sql="""
                 INSERT INTO pet (name, pet_type, birth_date, OWNER)
