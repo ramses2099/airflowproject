@@ -163,3 +163,5 @@ cython_debug/
 
 # auto update
 gitupdate.sh
+
+logs
