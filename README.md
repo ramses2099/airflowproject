@@ -51,3 +51,4 @@ docker compose up -d
 
 ### WebUI
 - http://localhost:8080
+http://10.0.0.50:8080

@@ -6,20 +6,20 @@ from airflow.providers.postgres.operators.postgres import PostgresOperator
 
 default_args ={
     'owner':'ramses2099',
-    'retries':5,
-    'retry_delay':timedelta(minutes=5)
+    'retries':2,
+    'retry_delay':timedelta(minutes=1)
 }
 
 @dag(default_args = default_args,
     dag_id='our_dag_with_postgree_operator',
     description = 'Our first dag using postgress operator',
-    start_date=datetime(2024, 6, 26, 2),
-    schedule_interval = '@daily',
+    start_date=datetime(2024, 8, 7),
+    schedule_interval = '@hourly',
 )
 def import_data_dbticketsystem_etl():
-    
+
     task1 = PostgresOperator(
-            task_id="insert_data_employees_table",
+            task_id="insert_data_departament_table",
             postgres_conn_id="postress_connection",
             sql="""
             insert into api_departament (name, created, user_id) values ('Business Development', '2023-11-21', 1);
